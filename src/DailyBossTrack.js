@@ -1,5 +1,6 @@
-import React from 'react'
-import ImageComponent from './ImageComponent'
+import ImageComponent from './components/ImageComponent'
+import toggleComplete from './components/toggleComplete'
+import checkComplete from './components/checkComplete'
 
 const DailyBossTrack = () => {
     const dailies = [
@@ -83,8 +84,8 @@ const DailyBossTrack = () => {
     return (
         <>
             {dailies.map(daily => (
-                <div className="overlay-wrapper" id={daily.name} key={daily.name} onClick={() => document.getElementById(daily.name).firstChild.classList.toggle("hidden")}>
-                    <img className="completed hidden" src={require('./imgs/cross.png')} alt={"completed " + daily.name} />
+                <div className="overlay-wrapper" id={daily.name} key={daily.name} onClick={() => toggleComplete(daily)}>
+                    <img className="completed hidden" src={require('./imgs/cross.png')} alt={"completed " + daily.name} onLoad={() => checkComplete(daily)}/>
                     <div className="item">
                         <ImageComponent url={daily.icon} alt={daily.name} /><span>{daily.name}</span>
                     </div>
