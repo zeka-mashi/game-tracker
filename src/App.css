@@ -122,13 +122,13 @@ section {
 .nav {
   display: flex;
   gap: 30px;
-  background-color: #537ed3;
+  background-color: #425490;
   /* min-height: 60px; */
   height: 6vh;
   width: -webkit-fill-available;
   width: 100%;
   font-size: 30px;
-  color: white;
+  color: #D0DAEC;
   overflow: hidden;
 }
 
@@ -149,16 +149,48 @@ section {
   display: flex;
   padding-top: 5px;
   text-decoration: none;
-  color: white;
+  color: #D0DAEC;
 }
 
 .section {
   text-align: center;
 }
 
+.time-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0px 30px 0px;
+}
+
+.time-header p {
+  border: 1px #4682BD solid;
+  border-radius: 5px;
+  background-color: #4682BD;
+  font-weight: bold;
+  color: #C1D6ED;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+.time-header span {
+  font-size: 30px;
+  color: #5FAFDB;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px black,
+    -1px -1px 5px black,
+    1px -1px 5px black,
+    -1px 1px 5px black;
+}
+
 .main {
-  background-color: #282c34;
   height: 100%;
+  background-image: url('./imgs/background.jpg');
+  background-color: #282c34;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -179,7 +211,6 @@ section {
 .tracker {
   display: flex;
   flex-direction: column;
-  border: gray solid 3px;
   border-radius: 10px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -188,32 +219,67 @@ section {
   width: 350px;
 }
 
+.daily {
+  border: rgb(218, 141, 0) solid 3px;
+}
+
+.weekly {
+  border: #35579c solid 3px;
+}
+
+.tracker-wrapper {
+  background-color: rgba(0, 0, 0, 0.50)
+}
+
 .daily .tracker-header {
-  background-color: orange;
+  background-color: rgb(218, 141, 0);
   font-size: 30px;
   padding: 10px;
 }
 
 .weekly .tracker-header {
-  background-color: #537ed3;
+  background-color: #35579c;
   font-size: 30px;
   padding: 10px;
 }
 
-.tracker>div:not(.tracker-wrapper) {
-  border-bottom: gray solid 3px;
+.daily>div:not(.tracker-wrapper) {
+  border-bottom: rgb(218, 141, 0) solid 3px;
+}
+
+.weekly>div:not(.tracker-wrapper) {
+  border-bottom: #35579c solid 3px;
+}
+
+.daily .item {
+  border-bottom: rgb(218, 141, 0) solid 1px;
+}
+
+.weekly .item {
+  border-bottom: #35579c solid 1px;
 }
 
 .item {
   padding: 5px 10px 5px 0px;
-  border-bottom: gray solid 1px;
+  border-bottom: darkgray solid 1px;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-.item>img {
+.item img {
   margin: 0 10px;
+  box-shadow: 1px 1px 3px rgb(104, 104, 104),
+    -1px -1px 3px rgb(104, 104, 104),
+    1px -1px 3px white,
+    -1px 1px 3px white;
+}
+
+.item span {
+  text-shadow: 1px 1px 5px black,
+    -1px -1px 5px black,
+    1px -1px 5px black,
+    -1px 1px 5px black;
 }
 
 .completed {
@@ -225,6 +291,41 @@ section {
   opacity: 0.75;
 }
 
+.reset-timer {
+  border: 1px rgb(179, 0, 0) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 43, 43, 0.65);
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+}
+
+.reset-timer span {
+  text-transform: none;
+}
+
 .hidden {
   display: none;
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  height: 60px;
+  background-color: #0E1E31;
+}
+
+#footer p {
+  margin-top: 20px;
+}
+
+#footer i {
+  font-size: 14px;
 }
