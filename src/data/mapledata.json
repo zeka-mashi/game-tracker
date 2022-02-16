@@ -1,0 +1,457 @@
+[
+    {
+        "id": 1,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Scrapyard",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/7c/Etc_Diffusion-Line_Energy_Core_%28Grade_A%29.png"
+    },
+    {
+        "id": 2,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Dark World Tree",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/5d/Etc_Faint_Stigma_Spirit_Stone.png"
+    },
+    {
+        "id": 3,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Mu Lung Dojo",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/f/fd/Mob_Mu_Gong.png"
+    },
+    {
+        "id": 4,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Guild: Culvert",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a9/MapIcon_Guild.png"
+    },
+    {
+        "id": 5,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Guild: Flag Race",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a9/MapIcon_Guild.png"
+    },
+    {
+        "id": 6,
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Event: Weekly Punch King",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/d/d1/Use_Basic_Damage_Skin.png"
+    },
+    {
+        "id": 7,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Zakum (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/98/Maple_Guide_-_Zakum.png"
+    },
+    {
+        "id": 8,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Magnus (Hard)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/52/Maple_Guide_-_Magnus.png"
+    },
+    {
+        "id": 9,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Hilla (Hard)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/15/Maple_Guide_-_Hilla.png"
+    },
+    {
+        "id": 10,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Papulatus (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a7/Maple_Guide_-_Papulatus.png"
+    },
+    {
+        "id": 11,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Pierre (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/9a/Maple_Guide_-_Pierre.png"
+    },
+    {
+        "id": 12,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Crimson Queen (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/7a/Maple_Guide_-_Crimson_Queen.png"
+    },
+    {
+        "id": 13,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Von Bon (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/1e/Maple_Guide_-_Von_Bon.png"
+    },
+    {
+        "id": 14,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Vellum (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/0b/Maple_Guide_-_Vellum.png"
+    },
+    {
+        "id": 15,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Pink Bean (Chaos)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/8/8a/Maple_Guide_-_Pink_Bean.png"
+    },
+    {
+        "id": 16,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Cygnus",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/18/Maple_Guide_-_Cygnus.png"
+    },
+    {
+        "id": 17,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Damien",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/72/Maple_Guide_-_Damien.png"
+    },
+    {
+        "id": 18,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Lotus",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/e/e9/Maple_Guide_-_Lotus.png"
+    },
+    {
+        "id": 19,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Lucid",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/03/Maple_Guide_-_Lucid.png"
+    },
+    {
+        "id": 20,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Will",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/d/df/Maple_Guide_-_Will.png"
+    },
+    {
+        "id": 21,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Gloom",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/15/Maple_Guide_-_Gloom.png"
+    },
+    {
+        "id": 22,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Versus Hilla",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/d/da/Maple_Guide_-_Verus_Hilla.png"
+    },
+    {
+        "id": 23,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Darknell",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/d/da/Maple_Guide_-_Guard_Captain_Darknell.png"
+    },
+    {
+        "id": 24,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Guardian Angel Slime",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/e/e6/Maple_Guide_-_Guardian_Angel_Slime.png"
+    },
+    {
+        "id": 25,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Princess No",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/6/61/Maple_Guide_-_Princess_No.png"
+    },
+    {
+        "id": 26,
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Akechi Mitsuhide",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/53/Maple_Guide_-_Akechi_Mitsuhide.png"
+    },
+    {
+        "id": 27,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Zakum (Easy/Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/98/Maple_Guide_-_Zakum.png"
+    },
+    {
+        "id": 28,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Magnus (Easy/Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/52/Maple_Guide_-_Magnus.png"
+    },
+    {
+        "id": 29,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Hilla (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/15/Maple_Guide_-_Hilla.png"
+    },
+    {
+        "id": 30,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "OMNI-CLN",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/5a/Maple_Guide_-_OMNI-CLN.png"
+    },
+    {
+        "id": 31,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Papulatus (Easy/Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a7/Maple_Guide_-_Papulatus.png"
+    },
+    {
+        "id": 32,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Pierre (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/9a/Maple_Guide_-_Pierre.png"
+    },
+    {
+        "id": 33,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Crimson Queen (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/7a/Maple_Guide_-_Crimson_Queen.png"
+    },
+    {
+        "id": 34,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Von Bon (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/1e/Maple_Guide_-_Von_Bon.png"
+    },
+    {
+        "id": 35,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Vellum (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/0b/Maple_Guide_-_Vellum.png"
+    },
+    {
+        "id": 36,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Von Leon",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/af/Maple_Guide_-_Von_Leon.png"
+    },
+    {
+        "id": 37,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Horntail",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/02/Maple_Guide_-_Horntail.png"
+    },
+    {
+        "id": 38,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Arkarium",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/e/eb/Maple_Guide_-_Arkarium.png"
+    },
+    {
+        "id": 39,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Pink Bean (Normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/8/8a/Maple_Guide_-_Pink_Bean.png"
+    },
+    {
+        "id": 40,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Mori Ranmaru",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/ac/Maple_Guide_-_Mori_Ranmaru.png"
+    },
+    {
+        "id": 41,
+        "is": "daily",
+        "type": "daily-boss",
+        "name": "Gollux",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/4/49/Maple_Guide_-_Gollux.png"
+    },
+    {
+        "id": 42,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "VJ: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/4/4f/Eqp_Arcane_Symbol_Vanishing_Journey.png"
+    },
+    {
+        "id": 43,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "VJ: Erda Spectrum",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/aa/MapIcon_Road_of_Vanishing.png"
+    },
+    {
+        "id": 44,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Chu Chu: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/74/Eqp_Arcane_Symbol_Chu_Chu_Island.png"
+    },
+    {
+        "id": 45,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Chu Chu: Hungry Muto",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/01/MapIcon_ChewChew.png"
+    },
+    {
+        "id": 46,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Lachelein: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/3/3c/Eqp_Arcane_Symbol_Lachelein.png"
+    },
+    {
+        "id": 47,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Lachelein: Dream Defender",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/99/MapIcon_Lacheln.png"
+    },
+    {
+        "id": 48,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Arcana: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/2/23/Eqp_Arcane_Symbol_Arcana.png"
+    },
+    {
+        "id": 49,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Arcana: Spirit Savior",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/b/b2/MapIcon_Arcana.png"
+    },
+    {
+        "id": 50,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Morass: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/7e/Eqp_Arcane_Symbol_Morass.png"
+    },
+    {
+        "id": 51,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Morass: Ranheim Defense",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/b/b6/MapIcon_Morass.png"
+    },
+    {
+        "id": 52,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Esfera: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/4/4f/Eqp_Arcane_Symbol_Esfera.png"
+    },
+    {
+        "id": 53,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Esfera: Esfera Guardian",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/0/05/MapIcon_esfera.png"
+    },
+    {
+        "id": 54,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Cernium: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/c/cc/Eqp_Sacred_Symbol_Cernium.png"
+    },
+    {
+        "id": 55,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Burning Cernium: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/c/cc/Eqp_Sacred_Symbol_Cernium.png"
+    },
+    {
+        "id": 56,
+        "is": "daily",
+        "type": "daily-quest",
+        "name": "Hotel Arcus: Daily Quests",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/78/Eqp_Sacred_Symbol_Arcus.png"
+    },
+    {
+        "id": 57,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Commerci Trade Voyages (x3)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/e/e8/MapIcon_CommerzBT.png"
+    },
+    {
+        "id": 58,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Ursus (x3)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/9/91/Mobicon_Ursus.png"
+    },
+    {
+        "id": 59,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Maple Tour (x2)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/2/2b/MapIcon_MTour.png"
+    },
+    {
+        "id": 60,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Monster Park (x2)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/7/7e/Etc_Monster_Park_Commemorative_Coin.png"
+    },
+    {
+        "id": 61,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Legion Raid",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/1/11/Etc_Legion_Coin.png"
+    },
+    {
+        "id": 62,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Daily Gift",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/8/8f/Etc_First_Explorer_Gift_Box.png"
+    },
+    {
+        "id": 63,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Fairy Bros",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/b/bb/NPC_Wonky_the_Fairy.png"
+    },
+    {
+        "id": 64,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Event: Coin Cap",
+        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+    },
+    {
+        "id": 65,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Event: Make Sandwich",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/54/Use_Sandwich.png"
+    }
+]

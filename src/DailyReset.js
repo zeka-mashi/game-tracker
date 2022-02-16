@@ -2,23 +2,23 @@ import React from 'react'
 
 const DailyReset = () => {
     var date = new Date();
-    var hoursMinSecs = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + 1, 0, 0, 0);
+    var nextDate = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + 1, 0, 0, 0);
     var now = Date.now();
-    var diff = Math.floor((hoursMinSecs - now) / 1000); // remove milliseconds
+    var diff = Math.floor((nextDate - now) / 1000); // remove milliseconds
 
-    var hours = Math.floor((diff + 1) / 3600), minutes = Math.floor((diff + 1) % 3600 / 60), seconds = Math.floor(diff % 3600 % 60) + 1
+    var hours = Math.floor(diff / 3600), minutes = Math.floor(diff % 3600 / 60), seconds = Math.floor(diff % 3600 % 60)
     if (seconds === 60) {
         seconds = 0;
     }
     if (hours === 0 && minutes === 0 && seconds === 0) {
         date = new Date();
-        hoursMinSecs = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + 1, 0, 0, 0);
+        nextDate = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + 1, 0, 0, 0);
         now = Date.now();
-        diff = Math.floor((hoursMinSecs - now) / 1000); // remove milliseconds
+        diff = Math.floor((nextDate - now) / 1000); // remove milliseconds
 
-        hours = Math.floor((diff + 1) / 3600);
-        minutes = Math.floor((diff + 1) % 3600 / 60);
-        seconds = Math.floor(diff % 3600 % 60) + 1;
+        hours = Math.floor(diff / 3600);
+        minutes = Math.floor(diff % 3600 / 60);
+        seconds = Math.floor(diff % 3600 % 60);
     }
 
     return (

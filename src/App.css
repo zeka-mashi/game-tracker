@@ -6,6 +6,13 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 img {
@@ -117,18 +124,23 @@ section {
 .content {
   display: flex;
   flex-direction: column;
+  background-color: #282c34;
+  background-image: url('./imgs/background.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .nav {
   display: flex;
   gap: 30px;
-  background-color: #537ed3;
-  /* min-height: 60px; */
+  background-color: #425490;
+  min-height: 50px;
   height: 6vh;
   width: -webkit-fill-available;
   width: 100%;
   font-size: 30px;
-  color: white;
+  color: #D0DAEC;
   overflow: hidden;
 }
 
@@ -149,20 +161,52 @@ section {
   display: flex;
   padding-top: 5px;
   text-decoration: none;
-  color: white;
+  color: #D0DAEC;
+}
+
+.nav-wrapper span {
+  display: flex;
+  padding-top: 12px;
+  text-decoration: none;
+  color: #D0DAEC;
 }
 
 .section {
   text-align: center;
 }
 
+.time-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0px 30px 0px;
+}
+
+.time-header p {
+  border: 1px #4682BD solid;
+  border-radius: 5px;
+  background-color: #4682BD;
+  font-weight: bold;
+  color: #C1D6ED;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+.time-header span {
+  font-size: 30px;
+  color: #5FAFDB;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px black,
+    -1px -1px 5px black,
+    1px -1px 5px black,
+    -1px 1px 5px black;
+}
+
 .main {
-  background-color: #282c34;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   font-size: 20px;
   color: white;
 }
@@ -179,52 +223,336 @@ section {
 .tracker {
   display: flex;
   flex-direction: column;
-  border: gray solid 3px;
   border-radius: 10px;
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
   height: fit-content;
   width: 350px;
+  min-width: 350px;
+}
+
+.daily {
+  border: rgb(218, 141, 0) solid 3px;
+}
+
+.weekly {
+  border: #35579c solid 3px;
+}
+
+.tracker-wrapper {
+  background-color: rgba(0, 0, 0, 0.50)
 }
 
 .daily .tracker-header {
-  background-color: orange;
+  background-color: rgb(218, 141, 0);
   font-size: 30px;
   padding: 10px;
 }
 
 .weekly .tracker-header {
-  background-color: #537ed3;
+  background-color: #35579c;
   font-size: 30px;
   padding: 10px;
 }
 
-.tracker>div:not(.tracker-wrapper) {
-  border-bottom: gray solid 3px;
+.tracker-header span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.daily>div:not(.tracker-wrapper) {
+  border-bottom: rgb(218, 141, 0) solid 3px;
+}
+
+.weekly>div:not(.tracker-wrapper) {
+  border-bottom: #35579c solid 3px;
+}
+
+.daily .item {
+  border-bottom: rgb(218, 141, 0) solid 1px;
+}
+
+.weekly .item {
+  border-bottom: #35579c solid 1px;
 }
 
 .item {
   padding: 5px 10px 5px 0px;
-  border-bottom: gray solid 1px;
+  border-bottom: darkgray solid 1px;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-.item>img {
+.item img {
   margin: 0 10px;
+  box-shadow: 1px 1px 3px rgb(104, 104, 104),
+    -1px -1px 3px rgb(104, 104, 104),
+    1px -1px 3px white,
+    -1px 1px 3px white;
+}
+
+.item span {
+  text-align: left;
+  text-shadow: 1px 1px 5px black,
+    -1px -1px 5px black,
+    1px -1px 5px black,
+    -1px 1px 5px black;
 }
 
 .completed {
   position: absolute;
   height: 50px;
-  margin-left: -190px;
-  margin-top: -3px;
-  width: 376px;
-  opacity: 0.75;
+  margin-left: -171px;
+  margin-top: -1px;
+  width: 50px;
+}
+
+@keyframes strike {
+  from {
+    text-decoration-color: transparent;
+  }
+
+  to {
+    text-decoration-color: red;
+  }
+}
+
+.strike {
+  text-decoration: line-through 1px red;
+  animation: strike 150ms linear;
+}
+
+.reset-timer {
+  border: 1px rgb(179, 0, 0) solid;
+  border-radius: 10px;
+  background-color: rgba(255, 43, 43, 0.65);
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+}
+
+.reset-timer span {
+  text-transform: none;
+}
+
+.let-there-be-light {
+  overflow: scroll;
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+
+.close-the-blinds {
+  overflow: hidden;
+  opacity: 0.25;
+  transition: visibility 0s 250ms, opacity 250ms linear;
+}
+
+#SettingsModal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  width: 60%;
+  height: 70%;
+  border: 3px solid #425490;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50vw;
+  overflow: overlay;
+  z-index: 100000;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 100ms linear;
 }
 
 .hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 150ms, opacity 150ms linear;
+}
+
+.hidden-item {
   display: none;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+#SettingsModal.visible {
+  transition: opacity 300ms linear;
+}
+
+#SettingsModal h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.setting-toggles {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+
+.setting-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.setting-item p,
+.setting-item input {
+  display: inline;
+}
+
+.setting-item option {
+  font-weight: bold;
+}
+
+#settings {
+  cursor: pointer;
+}
+
+#settings:hover {
+  color: rgb(165, 165, 165);
+}
+
+#SettingsModal select {
+  background-color: rgb(206 206 206);
+  min-width: 250px;
+  width: 100%;
+  border: 1px solid black;
+  min-height: 175px;
+  font-size: 16px;
+  min-height: 205px;
+}
+
+.task-selecton {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.reset-btn {
+  border: 2px solid rgb(173, 0, 0);
+  background-color: rgb(212, 0, 0);
+  padding: 2px 5px;
+}
+
+.reset-btn:hover {
+  border: 2px solid rgb(173, 0, 0);
+  background-color: rgb(151, 0, 0);
+}
+
+.selection-btn {
+  border: 2px solid rgb(110, 110, 255);
+  background-color: rgb(110, 110, 255);
+  width: 60%;
+  max-width: 150px;
+  margin: auto;
+  padding: 2px 0;
+}
+
+.selection-btn:hover {
+  border: 2px solid rgb(110, 110, 255);
+  background-color: rgb(61, 61, 255);
+}
+
+#hideTaskSelect,
+#showTaskSelect {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.close {
+  font-size: 25px;
+  float: right;
+  margin-top: -35px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: rgb(173, 173, 173);
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  height: 60px;
+  background-color: #0E1E31;
+}
+
+#footer p {
+  margin-top: 20px;
+}
+
+#footer i {
+  font-size: 14px;
+}
+
+.noscroll {
+  overscroll-behavior: contain;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  #SettingsModal {
+    height: 70%;
+    top: 15%;
+    width: 60vw;
+  }
+
+  #SettingsModal select {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  #SettingsModal {
+    height: 70%;
+    top: 15%;
+  }
+
+  #SettingsModal select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .task-selecton {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  #SettingsModal {
+    height: 75%;
+    top: 15%;
+    width: 90vw;
+    min-width: 290px;
+  }
+
+  #SettingsModal select {
+    width: 100%;
+    font-size: 16px;
+  }
 }

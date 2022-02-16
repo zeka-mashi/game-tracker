@@ -8,12 +8,13 @@ This project was bootstrapped with Create React App.
 
 - Tracking of the most common MapleStory daily and weekly bosses, quests, and miscellaneous tasks
 - Server (UTC) and local time display with daily and weekly reset countdowns
+- Ability to hide tasks from the UI
+- Automatically resets completed tasks on the daily and weekly resets
 
 ## To-do
 
-- Save completed tasks through browser refresh
-- Wipe/reset completed tasks on daily and weekly reset
-- Add customizability (i.e. disable certain tasks)
+- Store and access task keys as JSON
+
 ## Deployment
 
 ### `npm start`
