@@ -38,7 +38,7 @@
         "id": 6,
         "is": "weekly",
         "type": "weekly-quest-misc",
-        "name": "Event: Weekly Punch King",
+        "name": "Event: Yeti x Pink Bean Punch King",
         "icon": "https://static.wikia.nocookie.net/maplestory/images/d/d1/Use_Basic_Damage_Skin.png"
     },
     {
@@ -444,14 +444,7 @@
         "id": 64,
         "is": "daily",
         "type": "daily-misc",
-        "name": "Event: Coin Cap",
+        "name": "Event: Spring Energy Cap",
         "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
-    },
-    {
-        "id": 65,
-        "is": "daily",
-        "type": "daily-misc",
-        "name": "Event: Make Sandwich",
-        "icon": "https://static.wikia.nocookie.net/maplestory/images/5/54/Use_Sandwich.png"
     }
 ]
