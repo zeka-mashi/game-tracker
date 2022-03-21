@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/game-tracker/static/css/main.c42d39bf.css",
-    "main.js": "/game-tracker/static/js/main.6b2d19bb.js",
+    "main.js": "/game-tracker/static/js/main.8532b6b1.js",
     "static/js/787.2aa52fbf.chunk.js": "/game-tracker/static/js/787.2aa52fbf.chunk.js",
     "static/media/background.jpg": "/game-tracker/static/media/background.acd8e54bae797e141330.jpg",
     "static/media/completed.png": "/game-tracker/static/media/completed.eba30b460f458ce4b91b.png",
     "index.html": "/game-tracker/index.html",
     "main.c42d39bf.css.map": "/game-tracker/static/css/main.c42d39bf.css.map",
-    "main.6b2d19bb.js.map": "/game-tracker/static/js/main.6b2d19bb.js.map",
+    "main.8532b6b1.js.map": "/game-tracker/static/js/main.8532b6b1.js.map",
     "787.2aa52fbf.chunk.js.map": "/game-tracker/static/js/787.2aa52fbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c42d39bf.css",
-    "static/js/main.6b2d19bb.js"
+    "static/js/main.8532b6b1.js"
   ]
 }
