@@ -36,10 +36,10 @@
     },
     {
         "id": 6,
-        "is": "weekly",
-        "type": "weekly-quest-misc",
-        "name": "Event: Yeti x Pink Bean Punch King",
-        "icon": "https://static.wikia.nocookie.net/maplestory/images/d/d1/Use_Basic_Damage_Skin.png"
+        "is": "",
+        "type": "",
+        "name": "",
+        "icon": ""
     },
     {
         "id": 7,
@@ -390,6 +390,13 @@
         "type": "daily-quest",
         "name": "Hotel Arcus: Daily Quests",
         "icon": "https://static.wikia.nocookie.net/maplestory/images/7/78/Eqp_Sacred_Symbol_Arcus.png"
+    },
+    {
+        "id": 65,
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Yu Garden",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/4/45/MapIcon_YuYuanCN.png"
     },
     {
         "id": 57,
