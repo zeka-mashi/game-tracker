@@ -30,6 +30,25 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    var hdr = document.getElementsByClassName("tracker-header");
+    var i;
+
+    for (i = 0; i < hdr.length; i++) {
+      hdr[i].nextElementSibling.style.maxHeight = hdr[i].nextElementSibling.scrollHeight + "px";
+      hdr[i].addEventListener("click", function () {
+        var elm = this.nextElementSibling;
+        if (elm.style.maxHeight !== "0px") {
+          elm.style.maxHeight = "0";
+          elm.parentElement.classList.add("collapsed");
+        } else {
+          elm.style.maxHeight = elm.scrollHeight + "px";
+          elm.parentElement.classList.remove("collapsed");
+        }
+      });
+    }
+  }, []);
+
+  useEffect(() => {
     if (firstLoad.current) {
       document.getElementById("SettingsModal").classList.toggle("hidden");
       document.getElementById("SettingsModal").classList.toggle("visible");
@@ -46,7 +65,7 @@ const App = () => {
   }
 
   return (
-    <div className="content">
+    <div className="content maple">
       <SettingsModal settingsOpened={setSettingsModal} />
       <div className="nav">
         <div className="nav-wrapper">
@@ -67,19 +86,19 @@ const App = () => {
           <div className="reset-timer">Daily Reset in <DailyReset /></div>
           <div className="main-wrapper">
             <div className="tracker daily">
-              <div className="tracker-header">Daily Bosses</div>
+              <div className="tracker-header"><div className="collapse-icon"></div>Daily Bosses</div>
               <div className="tracker-wrapper">
                 <TrackComponent type="daily-boss" />
               </div>
             </div>
             <div className="tracker daily">
-              <div className="tracker-header">Daily Quests</div>
+              <div className="tracker-header"><div className="collapse-icon"></div>Daily Quests</div>
               <div className="tracker-wrapper">
                 <TrackComponent type="daily-quest" />
               </div>
             </div>
             <div className="tracker daily">
-              <div className="tracker-header">Daily Misc</div>
+              <div className="tracker-header"><div className="collapse-icon"></div>Daily Misc</div>
               <div className="tracker-wrapper">
                 <TrackComponent type="daily-misc" />
               </div>
@@ -90,13 +109,13 @@ const App = () => {
           <div className="reset-timer">Weekly Reset in <WeeklyReset /></div>
           <div className="main-wrapper">
             <div className="tracker weekly">
-              <div className="tracker-header">Weekly Bosses</div>
+              <div className="tracker-header"><div className="collapse-icon"></div>Weekly Bosses</div>
               <div className="tracker-wrapper">
                 <TrackComponent type="weekly-boss" />
               </div>
             </div>
             <div className="tracker weekly">
-              <div className="tracker-header">Weekly Quests & Misc<span>* some Quests/Misc reset Monday UTC</span></div>
+              <div className="tracker-header"><div className="collapse-icon"></div>Weekly Quests & Misc<span>* some Quests/Misc reset Monday UTC</span></div>
               <div className="tracker-wrapper">
                 <TrackComponent type="weekly-quest-misc" />
               </div>
@@ -110,3 +129,4 @@ const App = () => {
 };
 
 export default App;
+

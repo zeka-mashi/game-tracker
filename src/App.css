@@ -8,6 +8,7 @@ body {
   user-select: none;
   overflow: scroll;
   overflow-x: hidden;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -121,6 +122,10 @@ section {
   display: block
 }
 
+#root {
+  height: 100%;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -129,6 +134,7 @@ section {
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
+  height: 100%;
 }
 
 .nav {
@@ -241,7 +247,9 @@ section {
 }
 
 .tracker-wrapper {
-  background-color: rgba(0, 0, 0, 0.50)
+  background-color: rgba(0, 0, 0, 0.50);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .daily .tracker-header {
@@ -262,6 +270,21 @@ section {
   font-size: 14px;
 }
 
+.collapsed .collapse-icon:after {
+  transform: none;
+}
+
+.collapse-icon:after {
+  content: '\276F';
+  transform: rotate(90deg);
+  font-size: 25px;
+  color: white;
+  float: right;
+  margin-top: 4px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/*
 .daily>div:not(.tracker-wrapper) {
   border-bottom: rgb(218, 141, 0) solid 3px;
 }
@@ -269,7 +292,35 @@ section {
 .weekly>div:not(.tracker-wrapper) {
   border-bottom: #35579c solid 3px;
 }
+*/
 
+.overlay-wrapper {
+  cursor: pointer;
+  transition: transform .2s;
+  will-change: transform;
+}
+
+.overlay-wrapper:hover {
+  transform: translateZ(0) scale(1.03, 1.03);
+}
+
+.maple .daily .overlay-wrapper:hover .strike span {
+  color: #9b8a62;
+}
+
+.maple .weekly .overlay-wrapper:hover .strike span {
+  color: #6d8594;
+}
+
+.maple .daily .overlay-wrapper:hover span {
+  color: #ffe4a3;
+}
+
+.maple .weekly .overlay-wrapper:hover span {
+  color: #bce5ff;
+}
+
+/*
 .daily .item {
   border-bottom: rgb(218, 141, 0) solid 1px;
 }
@@ -277,10 +328,11 @@ section {
 .weekly .item {
   border-bottom: #35579c solid 1px;
 }
+*/
 
 .item {
   padding: 5px 10px 5px 0px;
-  border-bottom: darkgray solid 1px;
+  /*border-bottom: darkgray solid 1px;*/
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -323,6 +375,10 @@ section {
 .strike {
   text-decoration: line-through 1px red;
   animation: strike 150ms linear;
+}
+
+.strike span {
+  color: #aaaaaa;
 }
 
 .reset-timer {
