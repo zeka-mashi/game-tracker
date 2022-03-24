@@ -1,33 +1,11 @@
 import './App.css';
 import React, { useEffect, useState, useRef } from 'react';
-import DailyReset from './DailyReset';
-import WeeklyReset from './WeeklyReset';
-import TrackComponent from './components/TrackComponent';
-import clearCompleted from './components/clearCompleted';
 import SettingsModal from "./components/SettingsModal";
+import ContentComponent from "./components/ContentComponent";
 
 const App = () => {
-  const [serverTime, setServerTime] = useState(Date.now() + 1000);
   const [settingsModal, setSettingsModal] = useState(false);
-  var getDailyReset = localStorage.getItem("nextDailyReset");
-  var getWeeklyReset = localStorage.getItem("nextWeeklyReset");
   const firstLoad = useRef(false); // prevent settingsModal state from rendering twice
-
-
-  if (document.getElementById("main")) {
-    if (serverTime > getWeeklyReset) {
-      clearCompleted("all");
-    } else if (serverTime > getDailyReset) {
-      clearCompleted("daily");
-    }
-  }
-
-  useEffect(() => {
-    const interval = setInterval(() => setServerTime(Date.now() + 1000), 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   useEffect(() => {
     var hdr = document.getElementsByClassName("tracker-header");
@@ -43,6 +21,31 @@ const App = () => {
         } else {
           elm.style.maxHeight = elm.scrollHeight + "px";
           elm.parentElement.classList.remove("collapsed");
+        }
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    var item = document.getElementsByClassName("nav-item");
+    var i;
+
+    for (i = 0; i < item.length; i++) {
+      item[i].addEventListener("click", function () {
+        var item = document.getElementsByClassName("nav-item");
+        var i;
+
+        for (i = 0; i < item.length; i++) {
+          item[i].classList.remove("active");
+          var wrapper = document.getElementsByClassName(item[i].getAttribute('data-name'));
+          if (wrapper[0]) {
+            wrapper[0].classList.add("hidden-item");
+          }
+        }
+        this.classList.add("active");
+        var wrapper = document.getElementsByClassName(this.getAttribute('data-name'));
+        if (wrapper[0]) {
+          wrapper[0].classList.remove("hidden-item");
         }
       });
     }
@@ -65,64 +68,20 @@ const App = () => {
   }
 
   return (
-    <div className="content maple">
-      <SettingsModal settingsOpened={setSettingsModal} />
+    <div className="container">
       <div className="nav">
         <div className="nav-wrapper">
-          <h1>Dailies Tracker</h1>
+          <h1>Progression Tracker</h1>
           <span onClick={toggleSettingsModal} id="settings"><i className="fas fa-cog"></i></span>
         </div>
-      </div>
-      <div id="main" className="main let-there-be-light">
-        <div className="time-header">
-          <div className="server-time">
-            <p>Server time</p> <span>{new Date(parseInt(serverTime)).toISOString().substring(11, 19)} UTC</span>
-          </div>
-          <div className="local-time">
-            <p>Local time</p> <span>{new Date(parseInt(serverTime)).toLocaleTimeString({ hour12: true })}</span>
-          </div>
-        </div>
-        <div id="dailies" className="section">
-          <div className="reset-timer">Daily Reset in <DailyReset /></div>
-          <div className="main-wrapper">
-            <div className="tracker daily">
-              <div className="tracker-header"><div className="collapse-icon"></div>Daily Bosses</div>
-              <div className="tracker-wrapper">
-                <TrackComponent type="daily-boss" />
-              </div>
-            </div>
-            <div className="tracker daily">
-              <div className="tracker-header"><div className="collapse-icon"></div>Daily Quests</div>
-              <div className="tracker-wrapper">
-                <TrackComponent type="daily-quest" />
-              </div>
-            </div>
-            <div className="tracker daily">
-              <div className="tracker-header"><div className="collapse-icon"></div>Daily Misc</div>
-              <div className="tracker-wrapper">
-                <TrackComponent type="daily-misc" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="weeklies" className="section">
-          <div className="reset-timer">Weekly Reset in <WeeklyReset /></div>
-          <div className="main-wrapper">
-            <div className="tracker weekly">
-              <div className="tracker-header"><div className="collapse-icon"></div>Weekly Bosses</div>
-              <div className="tracker-wrapper">
-                <TrackComponent type="weekly-boss" />
-              </div>
-            </div>
-            <div className="tracker weekly">
-              <div className="tracker-header"><div className="collapse-icon"></div>Weekly Quests & Misc<span>* some Quests/Misc reset Monday UTC</span></div>
-              <div className="tracker-wrapper">
-                <TrackComponent type="weekly-quest-misc" />
-              </div>
-            </div>
-          </div>
+        <div className="nav-wrapper-2">
+          <h4 className="nav-item active" data-name="maple">MapleStory</h4>
+          <h4 className="nav-item" data-name="soon">Coming soon</h4>
         </div>
       </div>
+      <SettingsModal settingsOpened={setSettingsModal} />
+      <ContentComponent game="maple" />
+      <ContentComponent game="soon" />
       <div id="footer"><p>Made with <i className="fas fa-heart"></i> by zeka-mashi <i className="fas fa-copyright"></i> 2022</p></div>
     </div>
   );
