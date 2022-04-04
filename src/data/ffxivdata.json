@@ -1,0 +1,182 @@
+[
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Wondrous Tails",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/0/01/061825.png/32px-061825.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Jumbo Cactpot",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/39/061820.png/32px-061820.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Fashion Report",
+        "icon": "https://ffxiv.gamerescape.com/w/images/d/da/061828.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Custom Deliveries",
+        "icon": "https://ffxiv.gamerescape.com/w/images/f/fa/061827.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Tomestone Capping",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a9/MapIcon_Guild.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Challenge Log",
+        "icon": "https://ffxiv.gamerescape.com/w/images/c/c8/061810.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Squadron Missions",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/a/a9/MapIcon_Guild.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The First Circle (Savage)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/5/51/061832.png/32px-061832.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Second Circle (Savage)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/5/51/061832.png/32px-061832.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Third Circle (Savage)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/5/51/061832.png/32px-061832.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Fourth Circle (Savage)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/5/51/061832.png/32px-061832.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The First Circle (Normal)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/31/061802.png/32px-061802.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Second Circle (Normal)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/31/061802.png/32px-061802.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Third Circle (Normal)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/31/061802.png/32px-061802.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-boss",
+        "name": "Asphodelos: The Fourth Circle (Normal)",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/31/061802.png/32px-061802.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Lvl 90 Dungeons",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Expert",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Lvl 50/60/70/80",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Leveling",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Trials",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Main Scenario",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Alliance Raids",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Normal Raids",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-dungeon",
+        "name": "Mentor",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/f/f0/061807.png/32px-061807.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Frontline PvP",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/e/ef/061806.png/32px-061806.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Mini Cactpot",
+        "icon": "https://ffxiv.gamerescape.com/w/images/thumb/3/39/061820.png/32px-061820.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Beast Tribe Quests",
+        "icon": "https://ffxiv.gamerescape.com/w/images/e/e5/061814.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Retainer Ventures",
+        "icon": "https://ffxiv.gamerescape.com/w/images/9/9e/061818.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Grand Company Turn-ins",
+        "icon": "https://ffxiv.gamerescape.com/w/images/9/93/061812.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Squadron Missions (normal)",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/4/49/Maple_Guide_-_Gollux.png"
+    }
+]

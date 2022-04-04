@@ -409,7 +409,7 @@ section {
 .reset-timer {
   border: 1px rgb(179, 0, 0) solid;
   border-radius: 10px;
-  background-color: rgba(255, 43, 43, 0.65);
+  background-color: rgba(255, 43, 43, 0.5);
   font-weight: bold;
   color: #ffffff;
   padding: 5px 15px;
@@ -664,15 +664,18 @@ label {
 
 .multiselect-dropdown {
   padding: 0;
+  background-color: #eaeaea;
 }
 
 .multiselect-dropdown-list-wrapper {
   text-align: left;
+  background: #eaeaea;
 }
 
 .multiselect-dropdown-list-wrapper .multiselect-dropdown-search {
-  width: 98% !important;
+  width: 97% !important;
   padding: 5px 0px 5px 5px;
+  background-color: #eaeaea;
 }
 
 .multiselect-dropdown span.maxselected {

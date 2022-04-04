@@ -78,7 +78,7 @@ const ContentComponent = (props) => {
             </div>
         </div>
     } else {
-        return <div className="content soon"><p style={{ color: "white", textAlign: "center", fontSize: "30px" }}>Coming soon</p></div>
+        return <div className="content soon hidden-item"><p style={{ color: "white", textAlign: "center", fontSize: "30px" }}>Coming soon</p></div>
     }
 }
 
