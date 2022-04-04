@@ -8,6 +8,7 @@ body {
   user-select: none;
   overflow: scroll;
   overflow-x: hidden;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -121,6 +122,10 @@ section {
   display: block
 }
 
+#root {
+  height: 100%;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -129,19 +134,22 @@ section {
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
+  padding-top: 100px;
+  min-height: 89vh;
 }
 
 .nav {
   display: flex;
-  gap: 30px;
-  background-color: #425490;
+  flex-direction: column;
+  background-color: #252423;
   min-height: 50px;
-  height: 6vh;
   width: -webkit-fill-available;
   width: 100%;
   font-size: 30px;
   color: #D0DAEC;
   overflow: hidden;
+  position: fixed;
+  z-index: 100;
 }
 
 .nav-wrapper {
@@ -152,9 +160,21 @@ section {
 }
 
 .nav-wrapper h1 {
+  flex: 1 0 auto;
+  font-size: 1em;
+  text-align: center;
+}
+
+.nav-wrapper-2 {
   display: flex;
   flex: 1 0 auto;
-  font-size: 1.2em;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-wrapper-2 h4 {
+  font-size: 0.5em;
+  padding-top: 15px;
 }
 
 .nav-wrapper a {
@@ -166,9 +186,14 @@ section {
 
 .nav-wrapper span {
   display: flex;
-  padding-top: 12px;
+  padding-top: 10px;
   text-decoration: none;
   color: #D0DAEC;
+}
+
+.nav-wrapper-2 .active {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
 
 .section {
@@ -203,10 +228,15 @@ section {
     -1px 1px 5px black;
 }
 
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
 .main {
-  height: 100%;
+  /* height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   font-size: 20px;
   color: white;
 }
@@ -223,7 +253,7 @@ section {
 .tracker {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
@@ -241,19 +271,21 @@ section {
 }
 
 .tracker-wrapper {
-  background-color: rgba(0, 0, 0, 0.50)
+  background-color: rgba(0, 0, 0, 0.50);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .daily .tracker-header {
   background-color: rgb(218, 141, 0);
-  font-size: 30px;
-  padding: 10px;
+  font-size: 25px;
+  padding: 5px;
 }
 
 .weekly .tracker-header {
   background-color: #35579c;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 25px;
+  padding: 5px;
 }
 
 .tracker-header span {
@@ -262,6 +294,22 @@ section {
   font-size: 14px;
 }
 
+.collapsed .collapse-icon:after {
+  transform: none;
+}
+
+.collapse-icon:after {
+  content: '\276F';
+  transform: rotate(90deg);
+  font-size: 25px;
+  color: white;
+  float: right;
+  /* margin-top: 4px; */
+  margin-right: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/*
 .daily>div:not(.tracker-wrapper) {
   border-bottom: rgb(218, 141, 0) solid 3px;
 }
@@ -269,7 +317,35 @@ section {
 .weekly>div:not(.tracker-wrapper) {
   border-bottom: #35579c solid 3px;
 }
+*/
 
+.overlay-wrapper {
+  cursor: pointer;
+  transition: transform .2s;
+  will-change: transform;
+}
+
+.overlay-wrapper:hover {
+  transform: translateZ(0) scale(1.03, 1.03);
+}
+
+.maple .daily .overlay-wrapper:hover .strike span {
+  color: #9b8a62;
+}
+
+.maple .weekly .overlay-wrapper:hover .strike span {
+  color: #6d8594;
+}
+
+.maple .daily .overlay-wrapper:hover span {
+  color: #ffe4a3;
+}
+
+.maple .weekly .overlay-wrapper:hover span {
+  color: #bce5ff;
+}
+
+/*
 .daily .item {
   border-bottom: rgb(218, 141, 0) solid 1px;
 }
@@ -277,10 +353,11 @@ section {
 .weekly .item {
   border-bottom: #35579c solid 1px;
 }
+*/
 
 .item {
   padding: 5px 10px 5px 0px;
-  border-bottom: darkgray solid 1px;
+  /*border-bottom: darkgray solid 1px;*/
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -325,10 +402,14 @@ section {
   animation: strike 150ms linear;
 }
 
+.strike span {
+  color: #aaaaaa;
+}
+
 .reset-timer {
   border: 1px rgb(179, 0, 0) solid;
   border-radius: 10px;
-  background-color: rgba(255, 43, 43, 0.65);
+  background-color: rgba(255, 43, 43, 0.5);
   font-weight: bold;
   color: #ffffff;
   padding: 5px 15px;
@@ -346,7 +427,7 @@ section {
 }
 
 .let-there-be-light {
-  overflow: scroll;
+  overflow: auto;
   opacity: 1;
   transition: opacity 250ms linear;
 }
@@ -407,7 +488,7 @@ section {
 .setting-toggles {
   display: flex;
   flex-direction: column;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .setting-item {
@@ -427,6 +508,9 @@ section {
 
 #settings {
   cursor: pointer;
+  font-size: 25px;
+  position: fixed;
+  right: 15px;
 }
 
 #settings:hover {
@@ -455,6 +539,8 @@ section {
   border: 2px solid rgb(173, 0, 0);
   background-color: rgb(212, 0, 0);
   padding: 2px 5px;
+  margin-top: -3px;
+  border-radius: 3px;
 }
 
 .reset-btn:hover {
@@ -465,10 +551,9 @@ section {
 .selection-btn {
   border: 2px solid rgb(110, 110, 255);
   background-color: rgb(110, 110, 255);
-  width: 60%;
-  max-width: 150px;
-  margin: auto;
+  width: 20%;
   padding: 2px 0;
+  border-radius: 3px;
 }
 
 .selection-btn:hover {
@@ -476,10 +561,22 @@ section {
   background-color: rgb(61, 61, 255);
 }
 
-#hideTaskSelect,
-#showTaskSelect {
-  display: flex;
-  flex-direction: column;
+.settings-box {
+  margin-top: 2em;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.settings-box h3 {
+  display: table;
+  margin: -28px auto -8px 0px;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#TaskSelect {
   width: 100%;
 }
 
@@ -499,10 +596,13 @@ section {
   color: white;
   height: 60px;
   background-color: #0E1E31;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 #footer p {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 #footer i {
@@ -511,6 +611,7 @@ section {
 
 .noscroll {
   overscroll-behavior: contain;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -555,4 +656,34 @@ section {
     width: 100%;
     font-size: 16px;
   }
+}
+
+label {
+  color: black;
+}
+
+.multiselect-dropdown {
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+.multiselect-dropdown-list-wrapper {
+  text-align: left;
+  background: #eaeaea;
+}
+
+.multiselect-dropdown-list-wrapper .multiselect-dropdown-search {
+  width: 97% !important;
+  padding: 5px 0px 5px 5px;
+  background-color: #eaeaea;
+}
+
+.multiselect-dropdown span.maxselected {
+  width: 80%;
+}
+
+.multiselect-dropdown span.optext {
+  background-color: gray;
+  float: left;
+  margin: 2px;
 }

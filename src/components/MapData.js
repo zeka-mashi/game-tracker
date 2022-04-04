@@ -4,7 +4,8 @@ import checkComplete from './checkComplete'
 import completed from '../imgs/completed.png'
 
 const MapData = (data) => {
-    if ((data.props.type === data.track) && (localStorage.getItem('show ' + data.props.name) === "false")) {
+    var arr = JSON.parse(localStorage.getItem('hidden')) || [];
+    if ((data.props.type === data.track) && (arr.indexOf(data.props.name) > -1)) {
         return (
             <div className="overlay-wrapper hidden-item" id={data.props.name} key={data.props.name} onClick={() => toggleComplete(data.props)} >
                 <img className="completed hidden" src={completed} alt={"completed " + data.props.name} onLoad={() => checkComplete(data.props)} />

@@ -1,21 +1,23 @@
 import mapleData from '../data/mapledata.json'
 
-const TaskSelectionOption = (props) => {
-    if (props.shown === "true") {
-        return <select id="showSelection" key="showSelection" name="Shown" size="10">
-            {mapleData.map(data => {
-                if (!(localStorage.getItem('show ' + data.name) === "false")) {
-                    return <option key={data.id} value={data.name}>[{data.is}] {data.name}</option>
-                }
-            })}</select>
-    } else {
-        return <select id="hideSelection" key="hideSelection" name="Hidden" size="10">
-            {mapleData.map(data => {
-                if (localStorage.getItem('show ' + data.name) === "false") {
-                    return <option key={data.id} value={data.name}>[{data.is}] {data.name}</option>
-                }
-            })}</select>
-    }
+const TaskSelectionOption = () => {
+    var arr = JSON.parse(localStorage.getItem('hidden')) || [];
+    /*return <select multiple id="showSelection" key="showSelection" name="Shown" size="10">
+        {mapleData.map(data => {
+            if (!(arr.indexOf(data.name) > -1)) {
+                return <option key={data.name} value={data.name}>[{data.is}] {data.name}</option>
+            }
+        })}</select>*/
+    return <select name="showSelection" id="showSelection" multiple multiselect-search="true" multiselect-select-all="true" multiselect-max-items="0">
+        {mapleData.map(data => {
+            if (!(arr.indexOf(data.name) > -1)) {
+                return <option selected key={data.name} value={data.name}>[{data.is}] {data.name}</option>
+            }
+            if (arr.indexOf(data.name) > -1) {
+                return <option key={data.name} value={data.name}>[{data.is}] {data.name}</option>
+            }
+        })}
+    </select>
 };
 
 export default TaskSelectionOption;
