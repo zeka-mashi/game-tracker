@@ -82,7 +82,7 @@ const App = () => {
       <SettingsModal settingsOpened={setSettingsModal} />
       <ContentComponent game="maple" />
       <ContentComponent game="soon" />
-      <div id="footer"><p>Made with <i className="fas fa-heart"></i> by zeka-mashi <i className="fas fa-copyright"></i> 2022</p></div>
+      <div id="footer"><p>Made with <i className="fas fa-heart"></i> by zeka-mashi <i className="fas fa-copyright"></i> 2022 | <a href="https://github.com/zeka-mashi/game-tracker"><i className="fab fa-github"></i></a> <a href="https://davidthe.dev/"><i className="fas fa-globe"></i></a></p></div>
     </div>
   );
 };

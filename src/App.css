@@ -609,6 +609,15 @@ section {
   font-size: 14px;
 }
 
+#footer .fas:not(a > .fas) {
+  font-weight: 100;
+}
+
+#footer a {
+  font-weight: 900;
+  color: white;
+}
+
 .noscroll {
   overscroll-behavior: contain;
   overflow: hidden;
