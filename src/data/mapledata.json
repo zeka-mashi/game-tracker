@@ -31,6 +31,24 @@
     },
     {
         "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Event: Rock Spirit Punch King",
+        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Event: Wish Coin Cap",
+        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+    },
+    {
+        "is": "weekly",
+        "type": "weekly-quest-misc",
+        "name": "Event: Wake Sleeping Flowers",
+        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+    },
+    {
+        "is": "weekly",
         "type": "weekly-boss",
         "name": "Zakum (Chaos)",
         "icon": "https://static.wikia.nocookie.net/maplestory/images/9/98/Maple_Guide_-_Zakum.png"
@@ -380,7 +398,13 @@
     {
         "is": "daily",
         "type": "daily-misc",
-        "name": "Event: Tactical Relay",
+        "name": "Event: Blooming Coin Cap",
+        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+    },
+    {
+        "is": "daily",
+        "type": "daily-misc",
+        "name": "Event: Legion Gardening",
         "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
     }
 ]
