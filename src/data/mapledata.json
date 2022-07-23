@@ -32,19 +32,7 @@
     {
         "is": "weekly",
         "type": "weekly-quest-misc",
-        "name": "Event: Rock Spirit Punch King",
-        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
-    },
-    {
-        "is": "weekly",
-        "type": "weekly-quest-misc",
-        "name": "Event: Wish Coin Cap",
-        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
-    },
-    {
-        "is": "weekly",
-        "type": "weekly-quest-misc",
-        "name": "Event: Wake Sleeping Flowers",
+        "name": "Event: Harmony Coin Cap",
         "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
     },
     {
@@ -387,7 +375,7 @@
         "is": "daily",
         "type": "daily-misc",
         "name": "Daily Gift",
-        "icon": "https://static.wikia.nocookie.net/maplestory/images/8/8f/Etc_First_Explorer_Gift_Box.png"
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/8/83/Use_Mastery_Box.png"
     },
     {
         "is": "daily",
@@ -398,13 +386,13 @@
     {
         "is": "daily",
         "type": "daily-misc",
-        "name": "Event: Blooming Coin Cap",
-        "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
+        "name": "Home: Caretaker",
+        "icon": "https://static.wikia.nocookie.net/maplestory/images/6/65/MapIcon_jipangu.png"
     },
     {
         "is": "daily",
         "type": "daily-misc",
-        "name": "Event: Legion Gardening",
+        "name": "Event: Melody Coin Cap",
         "icon": "https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png"
     }
 ]
